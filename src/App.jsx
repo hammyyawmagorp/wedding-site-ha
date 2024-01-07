@@ -6,9 +6,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div>
-        <Portal />
-      </div>
+      <Portal />
     </div>
   );
 }

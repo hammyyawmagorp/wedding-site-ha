@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header-main ">
       <div className="flex Parent justify-center items-center">
-        <div className="basis-60">
+        <div className="basis-60  ">
           <img className="ash-cursive-logo" src={ashcursiveheader} />
         </div>
         <div className="basis-60">
