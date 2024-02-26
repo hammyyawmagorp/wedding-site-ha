@@ -6,7 +6,7 @@ import brgrdanceumb from "../images/brgrdanceumb.png";
 const Header = () => {
   return (
     <div className="header-main ">
-      <div className="flex Parent justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="basis-60  ">
           <img className="ash-cursive-logo" src={ashcursiveheader} />
         </div>
