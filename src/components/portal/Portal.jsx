@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeddingHub from "../wedding hub/WeddingHub";
 
 const Portal = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +9,6 @@ const Portal = () => {
 
   function doSomething(e) {
     if (formData.username === "" || formData.password === "") {
-      alert("Boooo! You stink! Loser! Type something!");
       e.preventDefault();
     } else if (
       formData.username === "hamasha2024" &&
@@ -21,17 +21,17 @@ const Portal = () => {
     ) {
       alert("Welcome bridal party person!");
     } else {
-      alert("Incorrect username/password combo, ya doofus.");
+      alert("Incorrect username/password combo");
       e.preventDefault();
     }
   }
 
   return (
-    <div className="h-screen Parent text-center">
+    <div className="h-auto Parent text-center">
       <div className="container mx-auto px-10 py-10 mt-20">
-        <div className="flex flex-col items-center justify-center box-border rounded-lg bg-weddingmaroon px-10 py-10 ">
+        <div className="flex flex-col items-center justify-center box-border rounded-lg bg-weddingmaroon px-20 py-10 ">
           <h1 className=" flex justify-center pb-5 text-weddinggold text-4xl font-medium">
-            Welcome to Our Wedding Hub!
+            Welcome!
           </h1>
           <h2 className="text-center text-xl text-weddingwhite ">
             We are delighted that you have decided to join us!
@@ -79,34 +79,19 @@ const Portal = () => {
               <label className="text-weddingwhite ">
                 <button
                   type="submit"
-                  className="text-center mt-6 bg-transparent font-semibold border-2 border-weddingblack hover:text-weddinggold py-1 px-3 hover:border-weddinggold rounded ease-in-out duration-500"
+                  className="mt-6 cursor-pointer relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
                 >
-                  Lets Party!
+                  {" "}
+                  <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-weddingwhite opacity-[3%]"></span>
+                  <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-weddinggold opacity-100 group-hover:-translate-x-8"></span>
+                  <span class="relative w-full text-left text-weddingwhite transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                    Lets Party!
+                  </span>
+                  <span class="absolute inset-0 border-2 border-weddinggold rounded-full"></span>
                 </button>
               </label>
             </form>
           </div>
-          {/* <h1 className=" flex justify-center pb-5 text-weddinggold text-4xl">
-            Welcome to Our Wedding Hub!
-          </h1>
-          <h2 className="text-center text-xl text-weddingwhite ">
-            We are delighted that you have decided to join us! Please select
-            from one of the options below.
-          </h2>
-          <br></br>
-          <h2 className="text-center text-xl text-weddingwhite pb-5">
-            Are You A Wedding Guest?
-          </h2>{" "}
-          <button className="bg-transparent hover:bg-weddinggold-500 text-weddinggold-700 font-semibold hover:text-weddinggold py-2 px-4 border border-weddinggold-500 hover:border-transparent rounded mb-10">
-            Wedding Guest Login
-          </button>
-          <h2 className=" flex justify-center text-xl text-weddingwhite pb-5">
-            Are You Bridal Party?
-          </h2>{" "}
-          <button className="bg-transparent hover:bg-weddinggold-500 text-weddinggold-700 font-semibold hover:text-weddinggold py-2 px-4 border border-weddinggold-500 hover:border-transparent rounded mb-10">
-            Bridal Party Login
-          </button>
-          <br></br> */}
         </div>
       </div>
     </div>
