@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import WeddingHub from "../wedding hub/WeddingHub";
+import { useNavigate } from "react-router-dom";
 
 const Portal = () => {
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   function doSomething(e) {
     if (formData.username === "" || formData.password === "") {
@@ -14,7 +17,7 @@ const Portal = () => {
       formData.username === "hamasha2024" &&
       formData.password === "oz2us"
     ) {
-      alert("Success! Welcome guest!");
+      navigate("/whub");
     } else if (
       formData.username === "bp24" &&
       formData.password === "bp24admin"
@@ -28,6 +31,7 @@ const Portal = () => {
 
   return (
     <div className="h-auto Parent text-center">
+      <div></div>
       <div className="container mx-auto px-10 py-10 mt-20">
         <div className="flex flex-col items-center justify-center box-border rounded-lg bg-weddingmaroon px-20 py-10 ">
           <h1 className=" flex justify-center pb-5 text-weddinggold text-4xl font-medium">
@@ -58,7 +62,7 @@ const Portal = () => {
                   />
                 </label>
               </div>
-              <div className="password-box mt-4 text-center text-weddinggold">
+              <div className="password-box mt-4 mb-4 text-center text-weddinggold">
                 <label>
                   Password: <br></br>
                   <input
@@ -79,15 +83,15 @@ const Portal = () => {
               <label className="text-weddingwhite ">
                 <button
                   type="submit"
-                  className="mt-6 cursor-pointer relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
+                  className="animate-bounce animate-infinite animate-delay-100 animate-fill-both mt-6 cursor-pointer relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
                 >
                   {" "}
-                  <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-weddingwhite opacity-[3%]"></span>
-                  <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-weddinggold opacity-100 group-hover:-translate-x-8"></span>
-                  <span class="relative w-full text-left text-weddingwhite transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                  <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-weddingwhite opacity-[3%]"></span>
+                  <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-weddinggold opacity-100 group-hover:-translate-x-8"></span>
+                  <span className="relative w-full text-left text-weddingwhite transition-colors duration-200 ease-in-out group-hover:text-gray-900">
                     Lets Party!
                   </span>
-                  <span class="absolute inset-0 border-2 border-weddinggold rounded-full"></span>
+                  <span className="absolute inset-0 border-2 border-weddinggold rounded-full"></span>
                 </button>
               </label>
             </form>
