@@ -46,8 +46,17 @@ const Clock = () => {
   }
 
   return (
-    <div className="p-4 bg-gradient-to-br from-[#bfb48f] to-[#904e55]">
-      <div className="flex items-center w-full max-w-5xl mx-auto bg-[#f2efe9]">
+    <div className="p-4 bg-gradient-to-br from-[#bfb48f] to-[#904e55] rounded">
+      <h2 className="mt-5 mb-3 text-4xl font-date font-bold text-center text-transparent bg-gradient-to-r from-[#564e58] to-[#904e55] bg-clip-text ">
+        ~ Sunday, 8 <span className="text-lg align-text-top">th</span>{' '}
+        <span className="pr-2 text-2xl">of</span>
+        <span> September</span> ~<br></br>
+        <div className="pt-2 mt-2 text-3xl text-center bg-gradient-to-r from-[#564e58] via-[#564e58]  to-[#252627] bg-clip-text">
+          09 <span className="text-2xl align-text-center">•</span> 08{' '}
+          <span className="text-2xl align-text-center">•</span> 24
+        </div>
+      </h2>
+      <div className="flex items-center w-full max-w-5xl mx-auto rounded bg-[#f2efe9]">
         <CountdownItem num={remaining.days} text="DAYS" />
         <CountdownItem num={remaining.hours} text="HOURS" />
         <CountdownItem num={remaining.minutes} text="MINUTES" />
@@ -68,13 +77,13 @@ const CountdownItem = ({ num, text }) => {
             animate={{ y: '0%' }}
             //   exit={{ y: '-100%' }}
             //   transition={{ ease: 'backIn', duration: 0.75 }}
-            className="block text-2xl font-medium text-black md:text-4xl lg:text-6xl xl:text-7xl"
+            className="block text-2xl font-medium text-weddingmaroon md:text-4xl lg:text-6xl xl:text-7xl"
           >
             {num}
           </motion.span>
         </AnimatePresence>
       </div>
-      <span className="text-xs font-light md:text-sm lg:text-base text-slate-500">
+      <span className="text-xs font-light md:text-sm lg:text-base text-weddingblack">
         {text}
       </span>
     </div>

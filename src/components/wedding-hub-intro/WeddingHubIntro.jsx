@@ -13,8 +13,8 @@ const WeddingHubIntro = () => {
           <h1 className="flex justify-center pb-5 text-4xl font-medium text-weddinggold">
             You've Reached
           </h1>
-          <h1 className="flex justify-center pb-5 text-6xl font-medium text-weddinggold">
-            The Wedding Hub
+          <h1 className="flex justify-center pb-5 text-6xl font-medium font-date text-weddinggold">
+            The Hub
           </h1>
           <p className="pt-5 pb-2 mt-5 mb-2 text-base text-weddingwhite">
             We call it "The Hub" – your one-stop for all things wedding-related!
