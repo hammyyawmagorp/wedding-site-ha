@@ -5,7 +5,7 @@ import giftenvelope from '../images/giftenvelope.jpg'
 import cashapp from '../images/cashapp.png'
 import zelle from '../images/zelle.png'
 import venmo from '../images/venmo.png'
-import paypal from '../images/paypal.png'
+import checkbook from '../images/checkbook.png'
 
 const Gifts = () => {
   return (
@@ -19,8 +19,8 @@ const Gifts = () => {
       <p className="pt-4 pb-1 mb-1 text-xl font-semibold text-center">
         Instead of a traditional gift, we would appreciate your contributions
         towards our future together. <br></br>You can send money through
-        CashApp, Venmo, PayPal, or Zelle. You can also mail us a check or hand
-        us cash in person. All details are provided below.
+        CashApp, Venmo, or Zelle. You can also mail us a check or hand us cash
+        in person. All details are provided below.
       </p>{' '}
       <p className="pt-4 pb-5 mb-5 text-xl font-semibold text-center">
         Please note that we kindly ask you not to get us boxed gifts. Your
@@ -37,11 +37,11 @@ const Gifts = () => {
         Hamein bahut khushi hai ke aap hamari shaadi me shamil honge! <br></br>
         Agar aap hame koi tohfa dena chahte hain to aap hame pese daan kar sakte
         hain take ham aage jaakar isse apni shaadi shuda zindagi ko shuru karne
-        me istemal kar sakein. Aap hame CashApp, Venmo, PayPal ya Zelle kar
-        sakte hain. Is ke saath saath aap hamein Check bhej sakte hain ya cash
-        bhi de sakte hain. Ham bahut khush hain ke aap hamare is naye safar ko
-        shuru karne mein hamare saath honge. Ham aap ke pyaar ko kabhi nahi
-        bhulenge! <br></br>
+        me istemal kar sakein. Aap hame CashApp, Venmo ya Zelle kar sakte hain.
+        Is ke saath saath aap hamein Check bhej sakte hain ya cash bhi de sakte
+        hain. Ham bahut khush hain ke aap hamare is naye safar ko shuru karne
+        mein hamare saath honge. Ham aap ke pyaar ko kabhi nahi bhulenge!{' '}
+        <br></br>
         Pyaar ke saath, Ayesha aur Hamal
       </p>
       <div className="flex flex-wrap justify-center">
@@ -69,7 +69,7 @@ const Gifts = () => {
           ></img>
           <div
             href="#"
-            className="p-5 text-center uppercase transition-all duration-500 text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+            className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
           >
             <span className="text-sm font-bold">*Recommended</span>
             <br />
@@ -87,7 +87,7 @@ const Gifts = () => {
           ></img>
           <div
             href="#"
-            className="p-3 text-center uppercase transition-all duration-500 text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+            className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
           >
             <span className="text-sm font-bold">*Recommended</span>
             <br></br>
@@ -97,21 +97,23 @@ const Gifts = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-[#00457C] sm:w-52 hover:scale-110">
+
+        <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingwhite sm:w-52 hover:scale-110">
           <img
-            src={paypal}
+            src={checkbook}
             alt="gift card"
             className="object-cover h-full "
           ></img>
           <div
             href="#"
-            className="p-5 text-center uppercase transition-all duration-500 text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite "
+            className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite "
           >
-            <span className="text-sm font-bold">*May Charge a fee</span>
+            <span className="text-sm font-bold">Check</span>
             <br></br>
-            <span className="underline">PayPal:</span> <br />
-            <span className="text-xl font-bold lowercase text-weddingmaroon">
-              @HamSam95
+            <span className="">Payable to:</span> <br />
+            <span className="text-xl font-bold text-weddingmaroon">
+              Hamal Samuel 35 Meeting LN, <br />
+              Hicksville, NY
             </span>
           </div>
         </div>
