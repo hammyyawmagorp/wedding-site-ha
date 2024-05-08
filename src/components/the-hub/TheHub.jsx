@@ -15,6 +15,9 @@ const TheHub = () => {
   function launchGifts() {
     navigate('/gifts')
   }
+  function launchItinerary() {
+    navigate('/itinerary')
+  }
   return (
     <div className="container px-10 pt-10 mx-auto mt-20 ">
       <h1 className="mb-4 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
@@ -129,7 +132,8 @@ const TheHub = () => {
               className="object-cover h-full "
             ></img>
             <button
-              href="#"
+              onClick={launchItinerary}
+              type="button"
               className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
             >
               Wedding Day <br></br> Itinerary

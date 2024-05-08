@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import WeddingHubIntro from './components/wedding-hub-intro/WeddingHubIntro'
 import TheHub from './components/the-hub/TheHub'
 import Gifts from './components/gifts/Gifts'
+import Itinerary from './components/itinerary/Itinerary'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/whubintro" element={<WeddingHubIntro />}></Route>
         <Route path="/whub" element={<TheHub />}></Route>
         <Route path="/gifts" element={<Gifts />}></Route>
+        <Route path="/itinerary" element={<Itinerary />}></Route>
       </Routes>
     </>
   )

@@ -1,7 +1,4 @@
 import React from 'react'
-import Clock from '../clock/Clock'
-import GiftsCards from '../gifts/GiftsCards'
-import giftenvelope from '../images/giftenvelope.jpg'
 import cashapp from '../images/cashapp.png'
 import zelle from '../images/zelle.png'
 import venmo from '../images/venmo.png'
@@ -23,26 +20,16 @@ const Gifts = () => {
         in person. All details are provided below.
       </p>{' '}
       <p className="pt-4 pb-5 mb-5 text-xl font-semibold text-center">
-        Please note that we kindly ask you not to get us boxed gifts. Your
-        understanding is truly appreciated. Thank you for being part of our
-        journey! Your love and support mean everything to us. <br></br>With
-        love, <br></br>
+        We kindly ask that you{' '}
+        <span className="italic font-bold underline">DO NOT</span> get us boxed
+        gifts. Your understanding is truly appreciated. Thank you for being part
+        of our journey! Your love and support mean everything to us. <br></br>
+        With love, <br></br>
         <div className="mt-2">
           <span className="text-3xl font-date">
             Ayesha <span className="pl-2 pr-2">&</span> Hamal
           </span>
         </div>
-      </p>
-      <p className="pb-5 mb-5 font-semibold text-center text-l">
-        Hamein bahut khushi hai ke aap hamari shaadi me shamil honge! <br></br>
-        Agar aap hame koi tohfa dena chahte hain to aap hame pese daan kar sakte
-        hain take ham aage jaakar isse apni shaadi shuda zindagi ko shuru karne
-        me istemal kar sakein. Aap hame CashApp, Venmo ya Zelle kar sakte hain.
-        Is ke saath saath aap hamein Check bhej sakte hain ya cash bhi de sakte
-        hain. Ham bahut khush hain ke aap hamare is naye safar ko shuru karne
-        mein hamare saath honge. Ham aap ke pyaar ko kabhi nahi bhulenge!{' '}
-        <br></br>
-        Pyaar ke saath, Ayesha aur Hamal
       </p>
       <div className="flex flex-wrap justify-center">
         <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-[#00D632] sm:w-52 hover:scale-110">
@@ -51,7 +38,7 @@ const Gifts = () => {
             alt="gift card"
             className="object-cover h-full "
           ></img>
-          <div className="p-5 text-center uppercase transition-all duration-500 border-solid hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite">
+          <div className="p-5 text-center uppercase transition-all duration-500 border-solid hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-[#00D632] ">
             <span className="text-sm font-bold">*Recommended</span>
             <br />
             <span className="underline">Cashapp:</span> <br></br>
@@ -79,7 +66,7 @@ const Gifts = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingwhite sm:w-52 hover:scale-110">
+        {/* <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-008CFF sm:w-52 hover:scale-110">
           <img
             src={venmo}
             alt="gift card"
@@ -89,14 +76,13 @@ const Gifts = () => {
             href="#"
             className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
           >
-            <span className="text-sm font-bold">*Recommended</span>
             <br></br>
             <span className="underline">Venmo:</span> <br />
             <span className="text-xl font-bold lowercase text-weddingmaroon">
               @HamSam95
             </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingwhite sm:w-52 hover:scale-110">
           <img

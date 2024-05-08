@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-const COUNTDOWN_FROM = '09/08/2024'
+const COUNTDOWN_FROM = '09/01/2024'
 
 const SECOND = 1000
 const MINUTE = SECOND * 60
@@ -48,11 +48,11 @@ const Clock = () => {
   return (
     <div className="p-4 bg-gradient-to-br from-[#bfb48f] to-[#904e55] rounded">
       <h2 className="mt-5 mb-3 text-4xl font-date font-bold text-center text-transparent bg-gradient-to-r from-[#564e58] to-[#904e55] bg-clip-text ">
-        ~ Sunday, 8 <span className="text-lg align-text-top">th</span>{' '}
+        ~ Sunday, 1 <span className="text-lg align-text-top">st</span>{' '}
         <span className="pr-2 text-2xl">of</span>
         <span> September</span> ~<br></br>
         <div className="pt-2 mt-2 text-3xl text-center bg-gradient-to-r from-[#564e58] via-[#564e58]  to-[#252627] bg-clip-text">
-          09 <span className="text-2xl align-text-center">•</span> 08{' '}
+          09 <span className="text-2xl align-text-center">•</span> 01{' '}
           <span className="text-2xl align-text-center">•</span> 24
         </div>
       </h2>
