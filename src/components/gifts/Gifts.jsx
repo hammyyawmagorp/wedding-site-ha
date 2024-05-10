@@ -25,11 +25,11 @@ const Gifts = () => {
         gifts. Your understanding is truly appreciated. Thank you for being part
         of our journey! Your love and support mean everything to us. <br></br>
         With love, <br></br>
-        <div className="mt-2">
+        <span className="mt-2">
           <span className="text-3xl font-date">
             Ayesha <span className="pl-2 pr-2">&</span> Hamal
           </span>
-        </div>
+        </span>
       </p>
       <div className="flex flex-wrap justify-center">
         <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-[#00D632] sm:w-52 hover:scale-110">
