@@ -8,6 +8,7 @@ import plane from '../images/plane.jpg'
 import ourpic from '../images/ourpic.jpeg'
 import itinerary from '../images/itinerary.jpg'
 import Clock from '../clock/Clock'
+import BridalPartyInfo from '../bridal-party-info/BridalPartyInfo'
 import { useNavigate } from 'react-router-dom'
 
 const TheHub = () => {
@@ -17,6 +18,9 @@ const TheHub = () => {
   }
   function launchItinerary() {
     navigate('/itinerary')
+  }
+  function launchBridalPartyInfo() {
+    navigate('/bridalparty')
   }
   function launchRSVP() {
     navigate('/rsvp')
@@ -71,10 +75,10 @@ const TheHub = () => {
               className="object-cover h-full "
             ></img>
             <button
-              href="#"
+              onClick={launchBridalPartyInfo}
               className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite"
             >
-              Meet the <br></br>Bridal Party
+              Meet the Bridal Party & The Families
             </button>
           </div>
           <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">

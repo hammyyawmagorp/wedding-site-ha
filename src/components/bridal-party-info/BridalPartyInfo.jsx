@@ -231,22 +231,6 @@ const BridalPartyInfo = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-          <img
-            // src={giftenvelope}
-            alt="gift card"
-            className="object-cover h-full "
-          ></img>
-          <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite">
-            <h2 className="font-bold">MC</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
-              magni nihil numquam cupiditate quis sint optio enim. Quaerat
-              aliquid explicabo possimus inventore, et aliquam odio suscipit
-              iste asperiores sed ut?
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   )
