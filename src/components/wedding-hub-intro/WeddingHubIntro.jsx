@@ -14,18 +14,18 @@ const WeddingHubIntro = () => {
             You've Reached
           </h1>
           <h1 className="flex justify-center pb-5 text-6xl font-medium font-date text-weddinggold">
-            The Hub
+            Our Wedding Hub
           </h1>
           <p className="pt-5 pb-2 mt-5 mb-2 text-base text-weddingwhite">
-            We call it "The Hub" – your one-stop for all things wedding-related!
+            Our Wedding Hub is your one-stop for all things wedding related!
             Here, you'll find everything you need to know about our big day and
-            stay updated on all the exciting details. Consider "The Hub" your
-            central station for staying informed and connected, as we journey
-            toward our wedding day together.
+            stay updated on all the exciting details. Consider "Our Wedding Hub"
+            your central station for staying informed and connected, as we
+            journey toward our wedding day together.
           </p>
           <p className="pt-5 pb-1 mt-2 mb-1 text-base text-center text-weddingwhite">
-            At "The Hub" you can send us a cash gift, RSVP, read our story, meet
-            the bridal party, get travel help, view our pics and so much more!
+            Here you can send us a cash gift, RSVP, read our story, meet the
+            bridal party, get travel help, view our pics and so much more!
           </p>
           <p className="pt-2 pb-2 mt-2 mb-2 text-base text-center text-weddingwhite">
             Get ready to launch...

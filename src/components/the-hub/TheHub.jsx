@@ -24,7 +24,7 @@ const TheHub = () => {
   return (
     <div className="container px-10 pt-10 mx-auto mt-20 ">
       <h1 className="mb-4 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
-        The Hub
+        Our Wedding Hub
       </h1>
       <div className="w-full min-h-screen p-6 bg-weddinggold/25">
         <h2 className="mt-5 mb-3 text-3xl font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text">
