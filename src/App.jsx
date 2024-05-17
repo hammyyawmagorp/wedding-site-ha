@@ -7,7 +7,7 @@ import TheHub from './components/the-hub/TheHub'
 import Gifts from './components/gifts/Gifts'
 import Itinerary from './components/itinerary/Itinerary'
 import BridalPartyInfo from './components/bridal-party-info/BridalPartyInfo'
-// import RSVP from './components/rsvp/RSVP'
+import RSVP from './components/rsvp/RSVP'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/gifts" element={<Gifts />}></Route>
         <Route path="/itinerary" element={<Itinerary />}></Route>
         <Route path="/bridalparty" element={<BridalPartyInfo />}></Route>
-        {/* <Route path="/rsvp" element={<RSVP />}></Route> */}
+        <Route path="/rsvp" element={<RSVP />}></Route>
       </Routes>
     </>
   )
