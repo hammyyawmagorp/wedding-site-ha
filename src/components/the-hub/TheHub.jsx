@@ -64,7 +64,7 @@ const TheHub = () => {
             >
               RSVP<br></br>
               <span className="font-extrabold underline">
-                *Deadline: July 1, 2024*
+                *Deadline: July 14, 2024*
               </span>
             </button>
           </div>

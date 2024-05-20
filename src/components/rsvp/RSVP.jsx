@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import { createClient } from '@supabase/supabase-js'
 import supabaseRsvp from '../../config/supabaseRsvpClient'
+import WhubBtn from '../whubbtn/WhubBtn'
 
 const RSVP = () => {
   const [name, setName] = useState('')
@@ -8,6 +9,7 @@ const RSVP = () => {
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
   const [formError, setFormError] = useState(null)
+  const [formSuccess, setFormSuccess] = useState(null)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -16,45 +18,46 @@ const RSVP = () => {
     setNumber('')
     setMessage('')
 
-    if (
-      !name ||
-      !attending ||
-      !number ||
-      attending != 'Yes' ||
-      attending != 'yes' ||
-      attending != 'No' ||
-      attending != 'no'
-    ) {
+    if (!name || !attending || !number) {
       setFormError('Please fill in all fields correctly')
+      e.preventDefault
     }
+
+    if (name && attending && number) {
+      // console.log(name, attending, number, message)
+      setFormSuccess('Thanks for confirming!')
+    }
+
     const { data, error } = await supabaseRsvp
       .from('weddingrsvp')
       .insert([{ name, attending, number, message }])
 
     if (error) {
-      console.log(error)
-      setFormError('Please fill in all fields correctly')
+      e.preventDefault
+      return
     }
     if (data) {
-      setFormError(null)
+      // setFormSuccess('Thanks for confirming. See you soon!')
+      return
     }
   }
-
   return (
     <div className="h-auto text-center Parent">
       <div className="container px-10 py-10 mx-auto mt-20 font-display">
-        <div className="box-border flex flex-col items-center justify-center px-20 py-10 rounded-lg bg-weddingmaroon ">
+        <WhubBtn />
+        <div className="box-border flex flex-col items-center justify-center px-20 py-10 mt-5 rounded-lg bg-weddingmaroon ">
           <h1 className="flex justify-center pb-5 text-4xl font-medium text-weddinggold">
-            Thanks for RSVP'ing!
+            Please RSVP
           </h1>
           <h2 className="text-xl text-center text-weddingwhite ">
-            We can't wait to see you!
+            Deadline: July 14, 2024
           </h2>
-          <div className="text-sm">*Required</div>
-
+          <br></br>
+          <div className="text-sm font-bold">*Required</div>
+          <br />
           <div>
             <form action="" onSubmit={handleSubmit}>
-              <div className="mt-4 text-center input-box text-weddinggold">
+              <div className="font-bold text-center input-box text-weddinggold">
                 <label>
                   *Name on Invitation: <br></br>
                   <input
@@ -68,7 +71,7 @@ const RSVP = () => {
                   />
                 </label>
               </div>
-              <div className="mt-4 text-center input-box text-weddinggold">
+              <div className="mt-4 font-bold text-center input-box text-weddinggold">
                 <label>
                   *Are You Able To Attend: <br></br>{' '}
                   <p className="text-sm text-weddingwhite">
@@ -81,12 +84,13 @@ const RSVP = () => {
                     name="attending"
                     value={attending}
                     onChange={(e) => setAttending(e.target.value)}
+                    maxLength={3}
                     required
                   />
                 </label>
               </div>
 
-              <div className="mt-4 mb-4 text-center password-box text-weddinggold">
+              <div className="mt-4 mb-4 font-bold text-center text-weddinggold">
                 <label>
                   *Number of Guests on Invitation: <br></br>
                   <input
@@ -100,7 +104,7 @@ const RSVP = () => {
                   />
                 </label>
               </div>
-              <div className="mt-4 mb-4 text-center password-box text-weddinggold">
+              <div className="mt-4 mb-4 font-bold text-center password-box text-weddinggold">
                 <label>
                   Anything Else We Should Know? <br></br>
                   <textarea
@@ -109,6 +113,8 @@ const RSVP = () => {
                     name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    rows={4}
+                    cols={25}
                   />
                 </label>
               </div>
@@ -125,7 +131,14 @@ const RSVP = () => {
                   </span>
                   <span className="absolute inset-0 border-2 rounded-full border-weddinggold"></span>
                 </button>
-                {/* {formError && <p className="error">{formError}</p>} */}
+                {formError && <p>{formError}</p>}
+                {formSuccess && (
+                  <>
+                    <p className="text-xl font-bold text-center text-weddingwhite">
+                      {formSuccess}
+                    </p>
+                  </>
+                )}
               </label>
             </form>
           </div>

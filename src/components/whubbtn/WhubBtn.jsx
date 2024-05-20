@@ -1,0 +1,32 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
+function WhubBtn() {
+  const navigate = useNavigate()
+  const routeChange = () => {
+    let path = `/whub`
+    navigate(path)
+  }
+  return (
+    <div>
+      <div className="text-center">
+        {' '}
+        <button
+          onClick={routeChange}
+          type="submit"
+          className="relative inline-flex items-center justify-start px-5 py-3 mt-6 overflow-hidden font-bold rounded-full cursor-pointer group"
+        >
+          {' '}
+          <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-weddingwhite opacity-[3%]"></span>
+          <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 opacity-100 bg-weddingmaroon group-hover:-translate-x-8"></span>
+          <span className="relative w-full text-left transition-colors duration-200 ease-in-out text-weddingblack group-hover:text-weddingwhite">
+            Go Back
+          </span>
+          <span className="absolute inset-0 border-2 rounded-full border-weddingmaroon"></span>
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default WhubBtn
