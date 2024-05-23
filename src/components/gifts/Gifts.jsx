@@ -3,6 +3,8 @@ import cashapp from '../images/cashapp.png'
 import zelle from '../images/zelle.png'
 import venmo from '../images/venmo.png'
 import checkbook from '../images/checkbook.png'
+import ccard from '../images/ccard.png'
+import westernunion from '../images/westernunion.png'
 import WhubBtn from '../whubbtn/WhubBtn'
 
 const Gifts = () => {
@@ -14,97 +16,143 @@ const Gifts = () => {
           <h1 className="mt-5 mb-4 pb-4 text-4xl uppercase font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
             What gifts would we like?
           </h1>
-          <p className="text-xl font-semibold text-center">
+          <p className="pt-5 mt-2 text-xl font-semibold text-center">
             We're thrilled to celebrate our wedding with you! <br></br>
           </p>
           <p className="pt-4 pb-1 mb-1 text-xl font-semibold text-center">
             Instead of a traditional gift, we would appreciate your
             contributions towards our future together. <br></br>You can send
-            money through CashApp, Venmo, or Zelle. You can also mail us a check
-            or hand us cash in person. All details are provided below.
+            money through CashApp, Venmo, or Zelle. You can also hand us a check
+            or cash in person. <br></br>More details and some direct links are
+            provided below.
           </p>{' '}
           <p className="pt-4 pb-5 mb-5 text-xl font-semibold text-center">
             We kindly ask that you{' '}
-            <span className="italic font-bold underline">DO NOT</span> get us
-            boxed gifts. Your understanding is truly appreciated. Thank you for
-            being part of our journey! Your love and support mean everything to
-            us. <br></br>
-            With love, <br></br>
-            <span className="mt-2">
-              <span className="text-3xl font-date">
-                Ayesha <span className="pl-2 pr-2">&</span> Hamal
-              </span>
-            </span>
+            <span className="italic font-extrabold ">do not</span> get us boxed
+            gifts. Your understanding is truly appreciated. Thank you for being
+            part of our journey! Your love and support mean everything to us.{' '}
+            <div className="pt-5">With love,</div>
+            <div className="pt-5 text-3xl font-date">
+              Ayesha <span className="pl-2 pr-2">&</span> Hamal
+            </div>
           </p>
           <div className="flex flex-wrap justify-center">
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-[#00D632] sm:w-52 hover:scale-110">
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
+              <img
+                src={ccard}
+                alt="credit and debit card gift"
+                className="object-cover h-full "
+              ></img>
+              <div
+                href="#"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite"
+              >
+                <span className="font-bold text-l">U.S & International</span>
+                <br />
+                <span className="text-xl font-bold text-weddingmaroon">
+                  <p className="pt-2 pb-0 text-xs">Click Below:</p>
+                  <button
+                    className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
+                    type="button"
+                  >
+                    <a
+                      href="https://www.zola.com/registry/hamalandayesha"
+                      target="_blank"
+                    >
+                      Credit/Debit
+                    </a>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
+              <img
+                src={venmo}
+                alt="credit and debit card gift"
+                className="object-cover h-full "
+              ></img>
+              <div
+                href="#"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite"
+              >
+                <span className="font-bold text-l">U.S Only</span>
+                <br />
+                <span className="text-xl font-bold text-weddingmaroon">
+                  <p className="pt-2 pb-0 text-xs">Click Below:</p>
+                  <button
+                    className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
+                    type="button"
+                  >
+                    <a
+                      href="https://venmo.com/?txn=pay&audience=public&recipients=@hamsam95&note=Wedding%20Gift"
+                      target="_blank"
+                    >
+                      Venmo
+                    </a>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
               <img
                 src={cashapp}
-                alt="gift card"
+                alt="credit and debit card gift"
                 className="object-cover h-full "
               ></img>
-              <div className="p-5 text-center uppercase transition-all duration-500 border-solid hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-[#00D632] ">
-                <span className="text-sm font-bold">*Recommended</span>
+              <div
+                href="#"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+              >
+                <span className="font-bold text-l">U.S & U.K Only</span>
                 <br />
-                <span className="underline">Cashapp:</span> <br></br>
-                <span className="text-xl font-bold lowercase text-weddingmaroon">
-                  $liwindow
+                <span className="text-xl font-bold text-weddingmaroon">
+                  <p className="pt-2 pb-0 text-xs ">Click Below:</p>
+                  <button
+                    className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
+                    type="button"
+                  >
+                    <a href="https://cash.app/$liwindow/" target="_blank">
+                      Cash App
+                    </a>
+                  </button>
                 </span>
               </div>
             </div>
-
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-[#671CCA] sm:w-52 hover:scale-110">
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
               <img
                 src={zelle}
-                alt="gift card"
+                alt="credit and debit card gift"
                 className="object-cover h-full "
               ></img>
               <div
                 href="#"
-                className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
               >
-                <span className="text-sm font-bold">*Recommended</span>
+                <span className="font-bold text-l">U.S Only</span>
                 <br />
-                <span className="underline">Zelle:</span> <br></br>
-                <span className="text-xl font-bold lowercase text-weddingmaroon">
-                  516-348-3414
+                <span className="text-xl font-bold text-weddingmaroon">
+                  <p className="pt-2 pb-0 text-xs ">For Zelle Info:</p>
+                  <br></br>
+                  <div className="mb-3">Text Hamal</div>
                 </span>
               </div>
             </div>
-            {/* <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-008CFF sm:w-52 hover:scale-110">
-          <img
-            src={venmo}
-            alt="gift card"
-            className="object-cover h-full "
-          ></img>
-          <div
-            href="#"
-            className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
-          >
-            <br></br>
-            <span className="underline">Venmo:</span> <br />
-            <span className="text-xl font-bold lowercase text-weddingmaroon">
-              @HamSam95
-            </span>
-          </div>
-        </div> */}
-
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingwhite sm:w-52 hover:scale-110">
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
               <img
-                src={checkbook}
-                alt="gift card"
+                src={westernunion}
+                alt="credit and debit card gift"
                 className="object-cover h-full "
               ></img>
               <div
                 href="#"
-                className="p-5 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite "
+                className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
               >
-                <span className="text-sm font-bold">Check</span>
-                <br></br>
-                <span className="">Payable to:</span> <br />
+                <span className="font-bold text-l">International Only</span>
+                <br />
                 <span className="text-xl font-bold text-weddingmaroon">
-                  Hamal Samuel 35 Meeting LN, <br />
-                  Hicksville, NY
+                  <p className="text-xs ">For Western Union Info:</p>
+                  <br></br>
+                  <div className="mb-1">Text Hamal or Ayesha</div>
                 </span>
               </div>
             </div>
