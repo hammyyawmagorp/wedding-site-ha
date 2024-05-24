@@ -26,16 +26,16 @@ const Gifts = () => {
             or cash in person. <br></br>More details and some direct links are
             provided below.
           </p>{' '}
-          <p className="pt-4 pb-5 mb-5 text-xl font-semibold text-center">
+          <div className="pt-4 pb-5 mb-5 text-xl font-semibold text-center">
             We kindly ask that you{' '}
             <span className="italic font-extrabold ">do not</span> get us boxed
             gifts. Your understanding is truly appreciated. Thank you for being
             part of our journey! Your love and support mean everything to us.{' '}
-            <div className="pt-5">With love,</div>
-            <div className="pt-5 text-3xl font-date">
+            <span className="pt-5">With love,</span>
+            <p className="pt-5 text-3xl font-date">
               Ayesha <span className="pl-2 pr-2">&</span> Hamal
-            </div>
-          </p>
+            </p>
+          </div>
           <div className="flex flex-wrap justify-center">
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-52 hover:scale-110">
               <img
@@ -50,7 +50,7 @@ const Gifts = () => {
                 <span className="font-bold text-l">U.S & International</span>
                 <br />
                 <span className="text-xl font-bold text-weddingmaroon">
-                  <p className="pt-2 pb-0 text-xs">Click Below:</p>
+                  <p className="pt-2 pb-0 text-xs">Click Button:</p>
                   <button
                     className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
                     type="button"
@@ -78,7 +78,7 @@ const Gifts = () => {
                 <span className="font-bold text-l">U.S Only</span>
                 <br />
                 <span className="text-xl font-bold text-weddingmaroon">
-                  <p className="pt-2 pb-0 text-xs">Click Below:</p>
+                  <p className="pt-2 pb-0 text-xs">Click Button:</p>
                   <button
                     className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
                     type="button"
@@ -101,12 +101,12 @@ const Gifts = () => {
               ></img>
               <div
                 href="#"
-                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite"
               >
                 <span className="font-bold text-l">U.S & U.K Only</span>
                 <br />
                 <span className="text-xl font-bold text-weddingmaroon">
-                  <p className="pt-2 pb-0 text-xs ">Click Below:</p>
+                  <p className="pt-2 pb-0 text-xs ">Click Button:</p>
                   <button
                     className="relative inline-flex items-center justify-start px-5 py-3 mt-3 overflow-hidden font-bold border-2 rounded-full cursor-pointer group hover:bg-weddingblack hover:text-weddingwhite bg-weddinggold border-weddingmaroon-2"
                     type="button"
@@ -126,7 +126,7 @@ const Gifts = () => {
               ></img>
               <div
                 href="#"
-                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+                className="p-5 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingwhite"
               >
                 <span className="font-bold text-l">U.S Only</span>
                 <br />
@@ -145,7 +145,7 @@ const Gifts = () => {
               ></img>
               <div
                 href="#"
-                className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingblack hover:text-weddingwhite"
+                className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingwhite"
               >
                 <span className="font-bold text-l">International Only</span>
                 <br />
