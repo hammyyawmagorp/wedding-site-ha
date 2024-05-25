@@ -1,9 +1,23 @@
 import React, { useState, useEffect } from 'react'
 // import { createClient } from '@supabase/supabase-js'
-import supabaseRsvp from '../../config/supabaseRsvpClient'
-import WhubBtn from '../whubbtn/WhubBtn'
+import supabase from '../../config/supabaseClient'
+import WhubBtn from '../btns/WhubBtn'
+import LogoutBtn from '../btns/LogoutBtn'
+import state from '../../config/state'
+import { useNavigate } from 'react-router-dom'
 
 const RSVP = () => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (
+      state.currentUser === null ||
+      state.currentUser !== import.meta.env.VITE_MAIN_USER
+    ) {
+      navigate('/')
+    }
+  })
+
   const [name, setName] = useState('')
   const [attending, setAttending] = useState('')
   const [number, setNumber] = useState('')
@@ -28,7 +42,7 @@ const RSVP = () => {
       setFormSuccess('Thanks for confirming!')
     }
 
-    const { data, error } = await supabaseRsvp
+    const { data, error } = await supabase
       .from('weddingrsvp')
       .insert([{ name, attending, number, message }])
 
@@ -44,7 +58,10 @@ const RSVP = () => {
   return (
     <div className="h-auto text-center Parent">
       <div className="container px-10 py-10 mx-auto mt-20 font-display">
-        <WhubBtn />
+        <div className="inline-flex space-x-4">
+          <WhubBtn />
+          <LogoutBtn />
+        </div>
         <div className="box-border flex flex-col items-center justify-center px-20 py-10 mt-5 rounded-lg bg-weddingmaroon ">
           <h1 className="flex justify-center pb-5 text-4xl font-medium text-weddinggold">
             Please RSVP
@@ -61,7 +78,7 @@ const RSVP = () => {
                 <label>
                   *Name on Invitation: <br></br>
                   <input
-                    className="mt-2 text-center text-black rounded-md"
+                    className="mt-2 text-center text-black rounded-md focus:text-green-700"
                     type="text"
                     placeholder="Name"
                     name="name"
@@ -74,11 +91,11 @@ const RSVP = () => {
               <div className="mt-4 font-bold text-center input-box text-weddinggold">
                 <label>
                   *Are You Able To Attend: <br></br>{' '}
-                  <p className="text-sm text-weddingwhite">
+                  <p className="text-sm text-weddingwhite ">
                     Type Yes or No Only
                   </p>
                   <input
-                    className="mt-2 text-center text-black rounded-md"
+                    className="mt-2 text-center text-black rounded-md focus:text-green-700"
                     type="text"
                     placeholder="Yes or No"
                     name="attending"
@@ -94,7 +111,7 @@ const RSVP = () => {
                 <label>
                   *Number of Guests on Invitation: <br></br>
                   <input
-                    className="mt-2 text-center text-black rounded-md"
+                    className="mt-2 text-center text-black rounded-md focus:text-green-700"
                     type="number"
                     placeholder="Guest Count"
                     name="number"
@@ -108,7 +125,7 @@ const RSVP = () => {
                 <label>
                   Anything Else We Should Know? <br></br>
                   <textarea
-                    className="p-2 mt-2 text-sm text-left text-black rounded-md"
+                    className="p-2 mt-2 text-sm text-left text-black rounded-md focus:text-weddingmaroon "
                     placeholder=""
                     name="message"
                     value={message}

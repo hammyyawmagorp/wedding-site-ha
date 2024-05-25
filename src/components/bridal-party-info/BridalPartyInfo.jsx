@@ -5,7 +5,7 @@ import speakerstock from '../images/speaker-stock.jpeg'
 import dadstock from '../images/dad-stock.jpeg'
 import momstock from '../images/mom-stock.jpeg'
 import sisstock from '../images/sis-stock.jpeg'
-import WhubBtn from '../whubbtn/WhubBtn'
+import WhubBtn from '../btns/WhubBtn'
 
 const BridalPartyInfo = () => {
   return (

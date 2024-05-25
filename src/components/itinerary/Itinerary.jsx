@@ -1,7 +1,7 @@
 import React from 'react'
 import weddingtimeline from '../images/weddingtimeline.png'
 // import { useNavigate } from 'react-router-dom'
-import WhubBtn from '../whubbtn/WhubBtn'
+import WhubBtn from '../btns/WhubBtn'
 
 const Itinerary = () => {
   return (

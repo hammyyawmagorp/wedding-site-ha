@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-
+import React, { useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import supabase from '../../config/supabaseClient'
+import state from '../../config/state'
 
 const Portal = () => {
   const [formData, setFormData] = useState({
@@ -8,24 +9,25 @@ const Portal = () => {
     password: '',
   })
 
+  const [formError, setFormError] = useState(null)
+  const uname = useRef('')
+  const pword = useRef('')
+
   const navigate = useNavigate()
 
-  function loginLaunch(e) {
-    if (formData.username === '' || formData.password === '') {
-      e.preventDefault()
-    } else if (
-      formData.username === 'hamasha2024' &&
-      formData.password === 'oz2us'
-    ) {
-      navigate('/whubintro')
-    } else if (
-      formData.username === 'bp24' &&
-      formData.password === 'bp24admin'
-    ) {
-      alert('Welcome bridal party person!')
+  async function loginLaunch(e) {
+    e.preventDefault()
+    const { data, error } = await supabase
+      .from('login')
+      .select('*')
+      .eq('username', formData.username)
+      .eq('password', formData.password)
+
+    if (data.length === 0) {
+      setFormError('Incorrect Username/Password. Please Try Again.')
     } else {
-      alert('Incorrect username/password combo')
-      e.preventDefault()
+      state.setCurrentUser(data[0].username)
+      navigate('/whub')
     }
   }
 
@@ -92,6 +94,14 @@ const Portal = () => {
                   </span>
                   <span className="absolute inset-0 border-2 rounded-full border-weddinggold"></span>
                 </button>
+
+                {formError && (
+                  <>
+                    <p className="text-xl font-bold text-center text-weddingwhite">
+                      {formError}
+                    </p>
+                  </>
+                )}
               </label>
             </form>
           </div>
