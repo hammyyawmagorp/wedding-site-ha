@@ -10,8 +10,8 @@ const Portal = () => {
   })
 
   const [formError, setFormError] = useState(null)
-  const uname = useRef('')
-  const pword = useRef('')
+  // const uname = useRef('')
+  // const pword = useRef('')
 
   const navigate = useNavigate()
 
@@ -25,6 +25,7 @@ const Portal = () => {
 
     if (data.length === 0) {
       setFormError('Incorrect Username/Password. Please Try Again.')
+      return
     } else {
       state.setCurrentUser(data[0].username)
       navigate('/whub')
@@ -35,10 +36,17 @@ const Portal = () => {
     <div className="h-auto text-center Parent">
       <div className="container px-10 py-10 mx-auto mt-20 font-display">
         <div className="box-border flex flex-col items-center justify-center px-20 py-10 rounded-lg bg-weddingmaroon ">
-          <h1 className="flex justify-center pb-5 text-4xl font-medium text-weddinggold">
-            Welcome!
+          <h1 className="flex justify-center pb-3 text-4xl font-medium uppercase text-weddinggold">
+            Welcome
           </h1>
-          <h2 className="text-xl text-center text-weddingwhite ">
+          <p className="pt-2 pb-2 mt-2 mb-2 text-normal text-weddingwhite">
+            Our Wedding Hub is your one-stop for all things wedding related.
+            Here, you'll find everything you need to know about our big day and
+            stay updated on all the exciting details. Consider "Our Wedding Hub"
+            your central station for staying informed and connected, as we
+            journey toward our wedding day together.
+          </p>
+          <h2 className="text-center text-normal text-weddingwhite ">
             We are delighted that you have decided to join us!
           </h2>
           <h2 className="mt-5">Please login</h2>

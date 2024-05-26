@@ -6,12 +6,16 @@ import dadstock from '../images/dad-stock.jpeg'
 import momstock from '../images/mom-stock.jpeg'
 import sisstock from '../images/sis-stock.jpeg'
 import WhubBtn from '../btns/WhubBtn'
+import LogoutBtn from '../btns/LogoutBtn'
 
 const BridalPartyInfo = () => {
   return (
     <div className="h-auto pt-10 mt-10 text-center">
       <div className="mt-5 mb-2 text-center">
-        <WhubBtn />
+        <div className="inline-flex space-x-4">
+          <WhubBtn />
+          <LogoutBtn />
+        </div>
         <div className="container w-full min-h-screen p-6 px-10 pt-5 mx-auto mt-10 bg-weddinggold/25 font-display">
           <h1 className="mt-5 mb-4 pb-4 text-4xl uppercase font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
             Get To Know <br></br>The Bridal Party & The Families

@@ -51,7 +51,6 @@ const RSVP = () => {
       return
     }
     if (data) {
-      // setFormSuccess('Thanks for confirming. See you soon!')
       return
     }
   }

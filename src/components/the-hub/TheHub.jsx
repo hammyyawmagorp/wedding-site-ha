@@ -42,15 +42,10 @@ const TheHub = () => {
   }
   return (
     <div>
-      <div className="flex justify-center pt-2 pb-2">
+      <div className="flex justify-center pb-2 mt-20 pt-15">
         <LogoutBtn />
       </div>
-      {/* <button
-        onClick={logout}
-        className="p-3 text-center uppercase transition-all duration-500 rounded hover:rounded-t-lg text-weddingwhite font-display bg-weddingmaroon hover:bg-weddingmaroon hover:text-weddingwhite"
-      >
-        Logout
-      </button> */}
+
       <h1 className="mb-2 mt-10 pt-10 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
         Our Wedding Hub
       </h1>
