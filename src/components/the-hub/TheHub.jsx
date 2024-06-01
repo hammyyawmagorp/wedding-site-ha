@@ -112,21 +112,23 @@ const TheHub = () => {
                 Meet the Bridal Party & The Families
               </button>
             </div>
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-              <img
-                onClick={launchSongs}
-                src={weddingdj}
-                alt="gift card"
-                className="object-cover h-full "
-              ></img>
-              <button
-                onClick={launchSongs}
-                href="#"
-                className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
-              >
-                Recommend a <br></br>Song
-              </button>
-            </div>
+            {isVisible && (
+              <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+                <img
+                  onClick={launchSongs}
+                  src={weddingdj}
+                  alt="gift card"
+                  className="object-cover h-full "
+                ></img>
+                <button
+                  onClick={launchSongs}
+                  href="#"
+                  className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
+                >
+                  Recommend a <br></br>Song
+                </button>
+              </div>
+            )}
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img
