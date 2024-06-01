@@ -1,13 +1,22 @@
-import React from 'react'
-import cashapp from '../images/cashapp.png'
-import zelle from '../images/zelle.png'
-import venmo from '../images/venmo.png'
-import ccard from '../images/ccard.png'
-import westernunion from '../images/westernunion.png'
+import { React, useEffect } from 'react'
+import cashapp from '../images/compressed/cashapp.png'
+import zelle from '../images/compressed/zelle.png'
+import venmo from '../images/compressed/venmo.png'
+import ccard from '../images/compressed/ccard.png'
+import westernunion from '../images/compressed/westernunion.png'
 import WhubBtn from '../btns/WhubBtn'
 import LogoutBtn from '../btns/LogoutBtn'
+import state from '../../config/state'
+import { useNavigate } from 'react-router-dom'
 
 const Gifts = () => {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (state.currentUser === null) {
+      navigate('/')
+    }
+  })
   return (
     <div className="h-auto pt-10 mt-10 text-center">
       <div className="mt-10 mb-2 text-center">

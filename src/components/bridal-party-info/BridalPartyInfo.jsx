@@ -1,10 +1,9 @@
 import React from 'react'
-import bestmanpic from '../images/bestman-stock.jpeg'
-import bridesmaidpic from '../images/bridesmaid-stock.jpeg'
-import speakerstock from '../images/speaker-stock.jpeg'
-import dadstock from '../images/dad-stock.jpeg'
-import momstock from '../images/mom-stock.jpeg'
-import sisstock from '../images/sis-stock.jpeg'
+import bestmanpic from '../images/compressed/bestman-stock.jpeg'
+import bridesmaidpic from '../images/compressed/bridesmaid-stock.jpeg'
+import dadstock from '../images/compressed/dad-stock.jpeg'
+import momstock from '../images/compressed/mom-stock.jpeg'
+import sisstock from '../images/compressed/sis-stock.jpeg'
 import WhubBtn from '../btns/WhubBtn'
 import LogoutBtn from '../btns/LogoutBtn'
 
@@ -157,23 +156,7 @@ const BridalPartyInfo = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-              <img
-                src={speakerstock}
-                alt="speaker pic"
-                className="object-cover h-full "
-              ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Wedding Speaker</h2>
-                <h3 className="font-bold text-weddingmaroon ">Nathan</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
-                </p>
-              </div>
-            </div>
+
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={dadstock}

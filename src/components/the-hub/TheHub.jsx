@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import giftenvelope from '../images/giftenvelope.jpg'
-import rsvpimage from '../images/rsvpimage.jpg'
-import bparty from '../images/bparty.jpg'
-import lovestory from '../images/lovestory.jpg'
-import weddingdj from '../images/weddingdj.jpg'
-import plane from '../images/plane.jpg'
-import ourpic from '../images/ourpic.jpeg'
-import itinerary from '../images/itinerary.jpg'
+import giftenvelope from '../images/compressed/giftenvelope.jpg'
+import rsvpimage from '../images/compressed/rsvpimage.jpeg'
+import bparty from '../images/compressed/bparty.jpg'
+import lovestory from '../images/compressed/lovestory.jpg'
+import weddingdj from '../images/compressed/weddingdj.jpg'
+import plane from '../images/compressed/plane.jpg'
+import ourpic from '../images/compressed/ourpic.jpeg'
+import itinerary from '../images/compressed/itinerary.jpg'
 import Clock from '../clock/Clock'
 import BridalPartyInfo from '../bridal-party-info/BridalPartyInfo'
 import LogoutBtn from '../btns/LogoutBtn'
@@ -35,6 +35,9 @@ const TheHub = () => {
   }
   function launchRSVP() {
     navigate('/rsvp')
+  }
+  function launchSongs() {
+    navigate('/songs')
   }
   function logout() {
     state.logout()
@@ -86,7 +89,7 @@ const TheHub = () => {
                 >
                   RSVP<br></br>
                   <span className="font-extrabold underline">
-                    *Deadline: July 14*
+                    *Deadline: July 31*
                   </span>
                 </button>
               </div>
@@ -111,6 +114,7 @@ const TheHub = () => {
                 className="object-cover h-full "
               ></img>
               <button
+                onClick={launchSongs}
                 href="#"
                 className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
               >

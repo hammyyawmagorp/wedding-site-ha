@@ -10,8 +10,6 @@ const Portal = () => {
   })
 
   const [formError, setFormError] = useState(null)
-  // const uname = useRef('')
-  // const pword = useRef('')
 
   const navigate = useNavigate()
 
@@ -25,6 +23,7 @@ const Portal = () => {
 
     if (data.length === 0) {
       setFormError('Incorrect Username/Password. Please Try Again.')
+
       return
     } else {
       state.setCurrentUser(data[0].username)

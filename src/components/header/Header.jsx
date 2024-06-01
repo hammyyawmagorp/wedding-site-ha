@@ -1,7 +1,7 @@
 import React from 'react'
-import ashcursiveheader from '../images/ashcursiveheader.png'
-import hamalcursiveheader from '../images/hamalcursiveheader.png'
-import brgrdanceumb from '../images/brgrdanceumb.png'
+import ashcursiveheader from '../images/compressed/ashcursiveheader.png'
+import hamalcursiveheader from '../images/compressed/hamalcursiveheader.png'
+import brgrdanceumb from '../images/compressed/brgrdanceumb.png'
 
 const Header = () => {
   return (

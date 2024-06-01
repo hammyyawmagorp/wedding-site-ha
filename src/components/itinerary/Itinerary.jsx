@@ -1,6 +1,6 @@
 import React from 'react'
-import weddingtimeline from '../images/weddingtimeline.png'
-// import { useNavigate } from 'react-router-dom'
+import weddingtimeline from '../images/compressed/weddingtimeline.png'
+
 import WhubBtn from '../btns/WhubBtn'
 import LogoutBtn from '../btns/LogoutBtn'
 

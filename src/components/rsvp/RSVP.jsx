@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-// import { createClient } from '@supabase/supabase-js'
 import supabase from '../../config/supabaseClient'
 import WhubBtn from '../btns/WhubBtn'
 import LogoutBtn from '../btns/LogoutBtn'
@@ -22,8 +21,8 @@ const RSVP = () => {
   const [attending, setAttending] = useState('')
   const [number, setNumber] = useState('')
   const [message, setMessage] = useState('')
-  const [formError, setFormError] = useState(null)
-  const [formSuccess, setFormSuccess] = useState(null)
+  const [formError, setFormError] = useState(undefined)
+  const [formSuccess, setFormSuccess] = useState(undefined)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -32,25 +31,22 @@ const RSVP = () => {
     setNumber('')
     setMessage('')
 
-    if (!name || !attending || !number) {
-      setFormError('Please fill in all fields correctly')
-      e.preventDefault
-    }
-
-    if (name && attending && number) {
-      // console.log(name, attending, number, message)
-      setFormSuccess('Thanks for confirming!')
-    }
-
-    const { data, error } = await supabase
+    // if (name && attending && number) {
+    //   console.log(name)
+    //   console.log(attending)
+    //   setFormSuccess('Thanks for confirming!')
+    // }
+    const { error } = await supabase
       .from('weddingrsvp')
       .insert([{ name, attending, number, message }])
-
     if (error) {
       e.preventDefault
-      return
-    }
-    if (data) {
+      console.log(error)
+      setFormError('Uh-oh! There is an Error. Let Hamal know!')
+    } else {
+      e.preventDefault
+      console.log(name)
+      setFormSuccess('Thanks for confirming!')
       return
     }
   }
@@ -63,16 +59,16 @@ const RSVP = () => {
         </div>
         <div className="box-border flex flex-col items-center justify-center px-20 py-10 mt-5 rounded-lg bg-weddingmaroon ">
           <h1 className="flex justify-center pb-5 text-4xl font-medium text-weddinggold">
-            Please RSVP
+            Please let us know if you're coming
           </h1>
           <h2 className="text-xl text-center text-weddingwhite ">
-            Deadline: July 14, 2024
+            Deadline: July 31, 2024
           </h2>
           <br></br>
           <div className="text-sm font-bold">*Required</div>
           <br />
           <div>
-            <form action="" onSubmit={handleSubmit}>
+            <form id="rsvpform" action="" onSubmit={handleSubmit}>
               <div className="font-bold text-center input-box text-weddinggold">
                 <label>
                   *Name on Invitation: <br></br>
@@ -147,7 +143,13 @@ const RSVP = () => {
                   </span>
                   <span className="absolute inset-0 border-2 rounded-full border-weddinggold"></span>
                 </button>
-                {formError && <p>{formError}</p>}
+                {formError && (
+                  <>
+                    <p className="text-xl font-bold text-center text-weddingwhite">
+                      {formError}
+                    </p>
+                  </>
+                )}
                 {formSuccess && (
                   <>
                     <p className="text-xl font-bold text-center text-weddingwhite">
