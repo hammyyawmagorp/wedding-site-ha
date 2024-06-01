@@ -140,8 +140,8 @@ const Songs = () => {
                   value={type}
                 >
                   <option value="select">Select...</option>
-                  <option value="dance">Dance</option>
-                  <option value="dinner">Dinner</option>
+                  <option value="Dance">Dance</option>
+                  <option value="Dinner">Dinner</option>
                 </select>
               </div>
 
