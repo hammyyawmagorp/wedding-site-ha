@@ -65,6 +65,7 @@ const TheHub = () => {
           <div className="flex flex-wrap justify-center">
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
+                onClick={launchGifts}
                 src={giftenvelope}
                 alt="gift card"
                 className="object-cover h-full "
@@ -80,6 +81,7 @@ const TheHub = () => {
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img
+                  onClick={launchRSVP}
                   src={rsvpimage}
                   alt="gift card"
                   className="object-cover h-full "
@@ -98,6 +100,7 @@ const TheHub = () => {
             )}
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
+                onClick={launchBridalPartyInfo}
                 src={bparty}
                 alt="gift card"
                 className="object-cover h-full "
@@ -111,6 +114,7 @@ const TheHub = () => {
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
+                onClick={launchSongs}
                 src={weddingdj}
                 alt="gift card"
                 className="object-cover h-full "
@@ -167,6 +171,7 @@ const TheHub = () => {
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img
+                  onClick={launchItinerary}
                   src={itinerary}
                   alt="gift card"
                   className="object-cover h-full "
