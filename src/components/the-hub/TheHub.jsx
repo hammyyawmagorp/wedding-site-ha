@@ -22,7 +22,9 @@ const TheHub = () => {
     }
   })
 
-  const isVisible = state.currentUser === import.meta.env.VITE_MAIN_USER
+  const isVisible =
+    state.currentUser === import.meta.env.VITE_MAIN_USER ||
+    state.currentUser === import.meta.env.VITE_SECOND_USER
 
   function launchGifts() {
     navigate('/gifts')

@@ -11,9 +11,13 @@ const Songs = () => {
   useEffect(() => {
     if (
       state.currentUser === null ||
-      state.currentUser !== import.meta.env.VITE_MAIN_USER
+      state.currentUser === import.meta.env.VITE_NOACCESS_USER
     ) {
       navigate('/')
+    } else if (state.currentUser === import.meta.env.VITE_MAIN_USER) {
+      return
+    } else if (state.currentUser === import.meta.env.VITE_SECOND_USER) {
+      return
     }
   })
 
