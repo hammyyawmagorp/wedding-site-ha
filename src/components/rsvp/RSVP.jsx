@@ -11,7 +11,8 @@ const RSVP = () => {
   useEffect(() => {
     if (
       state.currentUser === null ||
-      state.currentUser !== import.meta.env.VITE_MAIN_USER
+      state.currentUser !== import.meta.env.VITE_MAIN_USER ||
+      state.currentUser !== import.meta.env.VITE_SECOND_USER
     ) {
       navigate('/')
     }
