@@ -41,15 +41,17 @@ const Portal = () => {
           <p className="pt-2 pb-2 mt-2 mb-2 text-normal text-weddingwhite">
             Our Wedding Hub is your one-stop for all things wedding related.
             Here, you'll find everything you need to know about our big day and
-            stay updated on all the exciting details. Consider "Our Wedding Hub"
-            your central station for staying informed and connected, as we
-            journey toward our wedding day together.
+            stay updated on all the exciting details.
           </p>
           <h2 className="text-center text-normal text-weddingwhite ">
             We are delighted that you have decided to join us!
           </h2>
-          <h2 className="mt-5">Please login</h2>
-          <p className="mt-2">*All Fields Required</p>
+          <h3 className="pt-4 pb-2 mt-4 mb-2 font-bold text-normal text-weddinggold">
+            {' '}
+            The username and password are on the back of your reception
+            invitations
+          </h3>
+
           <div>
             <form action="" onSubmit={loginLaunch}>
               <div className="mt-4 text-center input-box text-weddinggold">

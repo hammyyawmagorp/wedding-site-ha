@@ -50,11 +50,11 @@ const TheHub = () => {
       <div className="flex justify-center pb-2 mt-20 pt-15">
         <LogoutBtn />
       </div>
-
-      <h1 className="mb-2 mt-10 pt-10 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
-        Our Wedding Hub
-      </h1>
-
+      <div className="">
+        <h1 className="mb-2 mt-10 pt-10 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
+          Our Wedding Hub
+        </h1>
+      </div>
       <div className="container px-10 pt-6 mx-auto mt-15">
         <div className="w-full min-h-screen p-6 bg-weddinggold/25">
           <h2 className="mt-5 mb-3 text-3xl font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text">
