@@ -48,8 +48,7 @@ const Portal = () => {
           </h2>
           <h3 className="pt-4 pb-2 mt-4 mb-2 font-bold text-normal text-weddinggold">
             {' '}
-            The username and password are on the back of your reception
-            invitations
+            The username and password are on the back of your invitations
           </h3>
 
           <div>
