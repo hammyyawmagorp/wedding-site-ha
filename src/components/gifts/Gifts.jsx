@@ -32,11 +32,13 @@ const Gifts = () => {
             We're thrilled to celebrate our wedding with you! <br></br>
           </p>
           <p className="pt-4 pb-1 mb-1 text-xl font-normal text-center">
-            Instead of a traditional gift, we would appreciate your
-            contributions towards our future together. <br></br>You can send
-            money through CashApp, Venmo, or Zelle. You can also hand us a check
-            or cash in person. <br></br>More details and some direct links are
-            provided below.
+            Instead of a traditional gift, we would greatly appreciate your
+            contributions towards our future together. <br></br>
+            You can send money through CashApp, Venmo, or Zelle. We also accept
+            Credit/Debit card payments. For our international friends,
+            Credit/Debit card and Western Union are available options as well.
+            You can also hand us a check or cash in person.<br></br>More details
+            and direct links are provided below.
           </p>{' '}
           <div className="pt-4 pb-5 mb-5 text-xl font-normal text-center">
             We kindly ask that you{' '}

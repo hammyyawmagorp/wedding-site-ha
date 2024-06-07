@@ -11,6 +11,7 @@ import NoMatch from './components/nomatch/NoMatch'
 const LazyHub = React.lazy(() => import('./components/the-hub/TheHub'))
 const LazyGifts = React.lazy(() => import('./components/gifts/Gifts'))
 const LazyRSVP = React.lazy(() => import('./components/rsvp/RSVP'))
+const LazyTravel = React.lazy(() => import('./components/travel/Travel'))
 const LazySongs = React.lazy(() => import('./components/songs/Songs'))
 const LazyBridalPartyInfo = React.lazy(() =>
   import('./components/bridal-party-info/BridalPartyInfo')
@@ -79,6 +80,14 @@ function App() {
           element={
             <React.Suspense>
               <LazySongs />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/travel"
+          element={
+            <React.Suspense>
+              <LazyTravel />
             </React.Suspense>
           }
         ></Route>

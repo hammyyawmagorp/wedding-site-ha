@@ -26,15 +26,46 @@ const BridalPartyInfo = () => {
                 alt="bestman pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Best Man</h2>
                 <h3 className="font-bold text-weddingmaroon">Zach</h3>
+                <h3 className="font-medium ">The Former Roommate</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{' '}
+                  </span>{' '}
+                  <span className="text-sm text-weddingmaroon">
+                    Out of Hamal's 12 roommates, I am one of the three he
+                    actually got along with. Hamal was there when I first met my
+                    wife, and he was the best man at my wedding.
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    {' '}
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="text-sm font-extrabold">1:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      My last name means baby seal in Irish
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold ">2:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      I almost met Conan O' Brien
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      I'm related to former US President Truman
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -43,15 +74,46 @@ const BridalPartyInfo = () => {
                 alt="bestman pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Groomsman</h2>
                 <h3 className="font-bold text-weddingmaroon">Nehal</h3>
+                <h3 className="font-medium ">The Little Brother</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{' '}
+                  </span>{' '}
+                  <span className="text-sm text-weddingmaroon">
+                    I'm Hamal's younger brother. Growing up we used to fight a
+                    lot, but I always knew I was his favorite sibling. (Don't
+                    tell our sister).
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -60,7 +122,7 @@ const BridalPartyInfo = () => {
                 alt="bestman pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Groomsman</h2>
                 <h3 className="font-bold text-weddingmaroon">Brian</h3>
                 <p>
@@ -77,15 +139,46 @@ const BridalPartyInfo = () => {
                 alt="bestman pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Groomsman</h2>
                 <h3 className="font-bold text-weddingmaroon">Kevin</h3>
+                <h3 className="font-medium ">The Canadian Best Friend</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{' '}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Hamal and I met through a mutual friend during the
+                    Zoom/pandemic days. We were told we were very similar. I
+                    didn't realize just how much so.
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      I prefer to have chickens as pets
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      My nationality changes based on how tanned I am.
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="text-sm font-light text-weddingpurple">
+                      I think my wife is jealous of my relationship with Hamal.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -156,7 +249,23 @@ const BridalPartyInfo = () => {
                 </p>
               </div>
             </div>
-
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+              <img
+                src={sisstock}
+                alt="bridesmaid pic"
+                className="object-cover h-full "
+              ></img>
+              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+                <h2 className="font-bold">Grooms Sister</h2>
+                <h3 className="font-bold text-weddingmaroon ">Nawal</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Atque, magni nihil numquam cupiditate quis sint optio enim.
+                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
+                  suscipit iste asperiores sed ut?
+                </p>
+              </div>
+            </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={dadstock}
@@ -191,23 +300,7 @@ const BridalPartyInfo = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-              <img
-                src={sisstock}
-                alt="bridesmaid pic"
-                className="object-cover h-full "
-              ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Grooms Sister</h2>
-                <h3 className="font-bold text-weddingmaroon ">Nawal</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
-                </p>
-              </div>
-            </div>
+
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={dadstock}

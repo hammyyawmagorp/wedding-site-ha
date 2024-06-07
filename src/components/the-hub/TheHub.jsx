@@ -41,6 +41,9 @@ const TheHub = () => {
   function launchSongs() {
     navigate('/songs')
   }
+  function launchTravel() {
+    navigate('/travel')
+  }
   function logout() {
     state.logout()
     navigate('/')
@@ -132,12 +135,13 @@ const TheHub = () => {
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img
+                  onClick={launchTravel}
                   src={plane}
                   alt="gift card"
                   className="object-cover h-full "
                 ></img>
                 <button
-                  href="#"
+                  onClick={launchTravel}
                   className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite"
                 >
                   Travel <br></br> Help

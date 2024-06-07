@@ -43,6 +43,11 @@ const RSVP = () => {
     const { error } = await supabase
       .from('weddingrsvp')
       .insert([{ name, attending, number, message }])
+    // if (setAttending === '') {
+    //   e.preventDefault
+    //   console.log(error)
+    //   setFormError('Uh-oh! There is an Error. Let Hamal know!')
+    // }
     if (error) {
       e.preventDefault
       console.log(error)
@@ -87,7 +92,7 @@ const RSVP = () => {
                   />
                 </label>
               </div>
-              <div className="mt-4 font-bold text-center input-box text-weddinggold">
+              {/* <div className="mt-4 font-bold text-center input-box text-weddinggold">
                 <label>
                   *Are You Able To Attend: <br></br>{' '}
                   <p className="text-sm text-weddingwhite ">
@@ -104,6 +109,20 @@ const RSVP = () => {
                     required
                   />
                 </label>
+              </div> */}
+              <div className="mt-4 mb-4 font-bold text-center text-weddinggold">
+                Can You Attend? <br></br>
+                <select
+                  className="mt-2 text-center text-black rounded-md focus:text-green-700"
+                  id="typebox"
+                  onChange={(e) => setAttending(e.target.value)}
+                  value={attending}
+                  required
+                >
+                  <option value="">Select...</option>
+                  <option value="Yes">Yes! Can't Wait!</option>
+                  <option value="No">No, sorry!</option>
+                </select>
               </div>
 
               <div className="mt-4 mb-4 font-bold text-center text-weddinggold">
