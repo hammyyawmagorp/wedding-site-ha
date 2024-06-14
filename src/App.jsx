@@ -3,16 +3,13 @@ import Header from './components/header/Header'
 import Portal from './components/portal/Portal'
 import { Routes, Route, Router } from 'react-router-dom'
 // import TheHub from './components/the-hub/TheHub'
-import Gifts from './components/gifts/Gifts'
-import Itinerary from './components/itinerary/Itinerary'
-import BridalPartyInfo from './components/bridal-party-info/BridalPartyInfo'
-import RSVP from './components/rsvp/RSVP'
 import NoMatch from './components/nomatch/NoMatch'
 const LazyHub = React.lazy(() => import('./components/the-hub/TheHub'))
 const LazyGifts = React.lazy(() => import('./components/gifts/Gifts'))
 const LazyRSVP = React.lazy(() => import('./components/rsvp/RSVP'))
 const LazyTravel = React.lazy(() => import('./components/travel/Travel'))
 const LazySongs = React.lazy(() => import('./components/songs/Songs'))
+const LazyStory = React.lazy(() => import('./components/story/Story'))
 const LazyBridalPartyInfo = React.lazy(() =>
   import('./components/bridal-party-info/BridalPartyInfo')
 )
@@ -88,6 +85,14 @@ function App() {
           element={
             <React.Suspense>
               <LazyTravel />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/story"
+          element={
+            <React.Suspense>
+              <LazyStory />
             </React.Suspense>
           }
         ></Route>

@@ -44,6 +44,9 @@ const TheHub = () => {
   function launchTravel() {
     navigate('/travel')
   }
+  function launchStory() {
+    navigate('/story')
+  }
   function logout() {
     state.logout()
     navigate('/')
@@ -155,7 +158,7 @@ const TheHub = () => {
                 className="object-cover h-full "
               ></img>
               <button
-                href="#"
+                onClick={launchStory}
                 className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
               >
                 Our <br /> Story
