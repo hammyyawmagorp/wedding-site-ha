@@ -1,11 +1,11 @@
-import React from 'react'
-import bestmanpic from '../images/compressed/bestman-stock.jpeg'
-import bridesmaidpic from '../images/compressed/bridesmaid-stock.jpeg'
-import dadstock from '../images/compressed/dad-stock.jpeg'
-import momstock from '../images/compressed/mom-stock.jpeg'
-import sisstock from '../images/compressed/sis-stock.jpeg'
-import WhubBtn from '../btns/WhubBtn'
-import LogoutBtn from '../btns/LogoutBtn'
+import React from "react";
+import bestmanpic from "../images/compressed/bestman-stock.jpeg";
+import bridesmaidpic from "../images/compressed/bridesmaid-stock.jpeg";
+import dadstock from "../images/compressed/dad-stock.jpeg";
+import momstock from "../images/compressed/mom-stock.jpeg";
+import sisstock from "../images/compressed/sis-stock.jpeg";
+import WhubBtn from "../btns/WhubBtn";
+import LogoutBtn from "../btns/LogoutBtn";
 
 const BridalPartyInfo = () => {
   return (
@@ -33,34 +33,34 @@ const BridalPartyInfo = () => {
                 <p>-</p>
                 <p>
                   <span className="font-extrabold text-1xl text-weddingpurple">
-                    "{' '}
-                  </span>{' '}
+                    "{" "}
+                  </span>{" "}
                   <span className="text-sm text-weddingmaroon">
                     Out of Hamal's 12 roommates, I am one of the three he
                     actually got along with. Hamal was there when I first met my
                     wife, and he was the best man at my wedding.
                   </span>
                   <span className="font-extrabold text-1xl text-weddingpurple">
-                    {' '}
+                    {" "}
                     "
                   </span>
                 </p>
                 <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
                 <div className="text-left">
                   <p>
-                    <span className="text-sm font-extrabold">1:</span>{' '}
+                    <span className="text-sm font-extrabold">1:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       My last name means baby seal in Irish
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold ">2:</span>{' '}
+                    <span className="font-extrabold ">2:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       I almost met Conan O' Brien
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="font-extrabold">3:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       I'm related to former US President Truman
                     </span>
@@ -81,8 +81,8 @@ const BridalPartyInfo = () => {
                 <p>-</p>
                 <p>
                   <span className="font-extrabold text-1xl text-weddingpurple">
-                    "{' '}
-                  </span>{' '}
+                    "{" "}
+                  </span>{" "}
                   <span className="text-sm text-weddingmaroon">
                     I'm Hamal's younger brother. Growing up we used to fight a
                     lot, but I always knew I was his favorite sibling. (Don't
@@ -96,19 +96,19 @@ const BridalPartyInfo = () => {
                 <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
                 <div className="text-left">
                   <p>
-                    <span className="font-extrabold">1:</span>{' '}
+                    <span className="font-extrabold">1:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       Lorem ipsum dolor, sit
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold">2:</span>{' '}
+                    <span className="font-extrabold">2:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="font-extrabold">3:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </span>
@@ -125,14 +125,47 @@ const BridalPartyInfo = () => {
               <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Groomsman</h2>
                 <h3 className="font-bold text-weddingmaroon">Brian</h3>
+                <h3 className="font-medium ">The Lorem Ipsum</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>{" "}
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
+
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={bestmanpic}
@@ -146,7 +179,7 @@ const BridalPartyInfo = () => {
                 <p>-</p>
                 <p>
                   <span className="font-extrabold text-1xl text-weddingpurple">
-                    "{' '}
+                    "{" "}
                   </span>
                   <span className="text-sm text-weddingmaroon">
                     Hamal and I met through a mutual friend during the
@@ -161,19 +194,19 @@ const BridalPartyInfo = () => {
                 <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
                 <div className="text-left">
                   <p>
-                    <span className="font-extrabold">1:</span>{' '}
+                    <span className="font-extrabold">1:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       I prefer to have chickens as pets
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold">2:</span>{' '}
+                    <span className="font-extrabold">2:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       My nationality changes based on how tanned I am.
                     </span>
                   </p>
                   <p>
-                    <span className="font-extrabold">3:</span>{' '}
+                    <span className="font-extrabold">3:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
                       I think my wife is jealous of my relationship with Hamal.
                     </span>
@@ -187,15 +220,46 @@ const BridalPartyInfo = () => {
                 alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Maid of Honor</h2>
                 <h3 className="font-bold text-weddingmaroon ">Nathasha</h3>
+                <h3 className="font-medium ">The Sister</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -204,15 +268,46 @@ const BridalPartyInfo = () => {
                 alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Bridesmaid</h2>
                 <h3 className="font-bold text-weddingmaroon ">Anita</h3>
+                <h3 className="font-medium ">The Lorem Ipsum</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -221,15 +316,46 @@ const BridalPartyInfo = () => {
                 alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Bridesmaid</h2>
                 <h3 className="font-bold text-weddingmaroon ">Amandine</h3>
+                <h3 className="font-medium ">The Lorem Ipsum</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -238,15 +364,46 @@ const BridalPartyInfo = () => {
                 alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Bridesmaid</h2>
                 <h3 className="font-bold text-weddingmaroon ">Kirsty</h3>
+                <h3 className="font-medium ">The Cousin Aunt</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
@@ -255,91 +412,245 @@ const BridalPartyInfo = () => {
                 alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
                 <h2 className="font-bold">Grooms Sister</h2>
                 <h3 className="font-bold text-weddingmaroon ">Nawal</h3>
+                <h3 className="font-medium ">The Sister</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
-              </div>
-            </div>
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-              <img
-                src={dadstock}
-                alt="dad stock"
-                className="object-cover h-full "
-              ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Grooms Dad</h2>
-                <h3 className="font-bold text-weddingmaroon ">Alphious</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
-                </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={momstock}
-                alt="mom stock"
+                alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Grooms Mom</h2>
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+                <h2 className="font-bold">Grooms Sister</h2>
                 <h3 className="font-bold text-weddingmaroon ">Shabina</h3>
+                <h3 className="font-medium ">The Mom</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
-              <img
-                src={dadstock}
-                alt="dad stock"
-                className="object-cover h-full "
-              ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Brides Dad</h2>
-                <h3 className="font-bold text-weddingmaroon ">Yohan</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
-                </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={momstock}
-                alt="mom stock"
+                alt="bridesmaid pic"
                 className="object-cover h-full "
               ></img>
-              <div className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
-                <h2 className="font-bold">Brides Mom</h2>
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+                <h2 className="font-bold">Grooms Sister</h2>
                 <h3 className="font-bold text-weddingmaroon ">Sulochini</h3>
+                <h3 className="font-medium ">The Mom</h3>
+                <p>-</p>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, magni nihil numquam cupiditate quis sint optio enim.
-                  Quaerat aliquid explicabo possimus inventore, et aliquam odio
-                  suscipit iste asperiores sed ut?
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
                 </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+              <img
+                src={dadstock}
+                alt="bridesmaid pic"
+                className="object-cover h-full "
+              ></img>
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+                <h2 className="font-bold">Grooms Sister</h2>
+                <h3 className="font-bold text-weddingmaroon ">Alphious</h3>
+                <h3 className="font-medium ">The Dad</h3>
+                <p>-</p>
+                <p>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
+                </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+              <img
+                src={dadstock}
+                alt="bridesmaid pic"
+                className="object-cover h-full "
+              ></img>
+              <div className="p-3 text-center transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddinggold hover:text-weddingmaroon">
+                <h2 className="font-bold">Grooms Sister</h2>
+                <h3 className="font-bold text-weddingmaroon ">Yohan</h3>
+                <h3 className="font-medium ">The Dad</h3>
+                <p>-</p>
+                <p>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "{" "}
+                  </span>
+                  <span className="text-sm text-weddingmaroon">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, magni nihil numquam cupiditate quis sint optio enim.
+                    Quaerat aliquid explicabo possimus inventore, et aliquam
+                    odio suscipit iste asperiores sed ut?
+                  </span>
+                  <span className="font-extrabold text-1xl text-weddingpurple">
+                    "
+                  </span>
+                </p>
+                <p className="pt-2 pb-2 text-sm">Three Fun Facts About Me:</p>
+                <div className="text-left">
+                  <p>
+                    <span className="font-extrabold">1:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">2:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                  <p>
+                    <span className="font-extrabold">3:</span>{" "}
+                    <span className="text-sm font-light text-weddingpurple">
+                      Lorem Lorem Lorem Lorem
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BridalPartyInfo
+export default BridalPartyInfo;
