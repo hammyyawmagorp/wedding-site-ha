@@ -1,21 +1,24 @@
-import React from "react";
-import bestmanpic from "../images/compressed/bestman-stock.jpeg";
-import bridesmaidpic from "../images/compressed/bridesmaid-stock.jpeg";
-import dadstock from "../images/compressed/dad-stock.jpeg";
-import momstock from "../images/compressed/mom-stock.jpeg";
-import sisstock from "../images/compressed/sis-stock.jpeg";
-import WhubBtn from "../btns/WhubBtn";
-import LogoutBtn from "../btns/LogoutBtn";
+import React from 'react'
+import bestmanpic from '../images/compressed/bestman-stock.jpeg'
+import bridesmaidpic from '../images/compressed/bridesmaid-stock.jpeg'
+import dadstock from '../images/compressed/dad-stock.jpeg'
+import momstock from '../images/compressed/mom-stock.jpeg'
+import sisstock from '../images/compressed/sis-stock.jpeg'
+import WhubBtn from '../btns/WhubBtn'
+import LogoutBtn from '../btns/LogoutBtn'
 
 const BridalPartyInfo = () => {
   return (
-    <div className="h-auto pt-10 mt-10 text-center">
-      <div className="mt-5 mb-2 text-center">
-        <div className="inline-flex space-x-4">
-          <WhubBtn />
-          <LogoutBtn />
-        </div>
-        <div className="container w-full min-h-screen p-6 px-10 pt-5 mx-auto mt-10 bg-weddinggold/25 font-display">
+    // <div className="h-auto pt-10 mt-10 text-center">
+    <div className="mt-5 mb-2 text-center">
+      <div className="inline-flex space-x-4">
+        <WhubBtn />
+        <LogoutBtn />
+      </div>
+      <h1 className="mt-10 pt-15">
+        Page under construction! Please check back later.
+      </h1>
+      {/* <div className="container w-full min-h-screen p-6 px-10 pt-5 mx-auto mt-10 bg-weddinggold/25 font-display">
           <h1 className="mt-5 mb-4 pb-4 text-4xl uppercase font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
             Get To Know <br></br>The Bridal Party & The Families
           </h1>
@@ -98,19 +101,19 @@ const BridalPartyInfo = () => {
                   <p>
                     <span className="font-extrabold">1:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
-                      Lorem ipsum dolor, sit
+                      I play the piano.
                     </span>
                   </p>
                   <p>
                     <span className="font-extrabold">2:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      I have a pet snake.
                     </span>
                   </p>
                   <p>
                     <span className="font-extrabold">3:</span>{" "}
                     <span className="text-sm font-light text-weddingpurple">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      I work on cars.
                     </span>
                   </p>
                 </div>
@@ -648,9 +651,9 @@ const BridalPartyInfo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default BridalPartyInfo;
+export default BridalPartyInfo

@@ -164,7 +164,7 @@ const TheHub = () => {
                 Our <br /> Story
               </button>
             </div>
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+            {/* <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 src={ourpic}
                 alt="gift card"
@@ -176,7 +176,7 @@ const TheHub = () => {
               >
                 Engagement <br></br>Photos
               </button>
-            </div>
+            </div> */}
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img

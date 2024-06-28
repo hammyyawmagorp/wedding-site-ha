@@ -9,7 +9,7 @@ const Story = () => {
         <WhubBtn />
         <LogoutBtn />
       </div>
-      <div className="h-auto text-center Parent">
+      <div className="h-auto text-center Parent text-weddingwhite">
         <div className="container px-10 py-10 mx-auto mt-20 font-display">
           <div className="box-border flex flex-col items-center justify-center px-20 py-10 rounded-lg bg-weddingmaroon ">
             <p className="pb-5">
