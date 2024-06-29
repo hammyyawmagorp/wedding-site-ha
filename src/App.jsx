@@ -10,6 +10,7 @@ const LazyRSVP = React.lazy(() => import('./components/rsvp/RSVP'))
 const LazyTravel = React.lazy(() => import('./components/travel/Travel'))
 const LazySongs = React.lazy(() => import('./components/songs/Songs'))
 const LazyStory = React.lazy(() => import('./components/story/Story'))
+const LazyZoom = React.lazy(() => import('./components/zoominfo/ZoomInfo'))
 const LazyBridalPartyInfo = React.lazy(() =>
   import('./components/bridal-party-info/BridalPartyInfo')
 )
@@ -93,6 +94,14 @@ function App() {
           element={
             <React.Suspense>
               <LazyStory />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/zoominfo"
+          element={
+            <React.Suspense>
+              <LazyZoom />
             </React.Suspense>
           }
         ></Route>

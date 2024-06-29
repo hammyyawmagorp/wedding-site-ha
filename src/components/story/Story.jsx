@@ -15,8 +15,8 @@ const Story = () => {
         <WhubBtn />
         <LogoutBtn />
       </div>
-      <div className="flex justify-center px-5 py-5 text-center Parent text-weddingblack">
-        <div className="container px-5 py-5 mx-auto mt-20 font-display">
+      <div className="flex justify-center px-2 py-5 text-center Parent text-weddingblack">
+        <div className="container px-2 py-5 mx-auto mt-20 font-display">
           <div className="box-border flex flex-col items-center justify-center px-20 py-10 rounded-lg ">
             <section>
               <Reveal>
@@ -25,7 +25,7 @@ const Story = () => {
                 </div>{' '}
               </Reveal>
               <Reveal>
-                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl md:px-5 sm:px-2">
+                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl ">
                   <span className="text-5xl font-date">H</span>amal and Ayesha's
                   journey began in the most unexpected of times and places—a
                   Zoom meeting in the midst of the global pandemic in 2020.
@@ -43,7 +43,7 @@ const Story = () => {
                 </div>{' '}
               </Reveal>
               <Reveal>
-                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl md:px-5 sm:px-2">
+                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl sm:px-2">
                   <span className="pr-1 text-5xl font-date">A</span>t that time,
                   Hamal was residing in Karachi, while Ayesha called Melbourne
                   home. It wasn't long before Ayesha realized that Hamal was
@@ -64,7 +64,7 @@ const Story = () => {
                 </div>{' '}
               </Reveal>
               <Reveal>
-                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl md:px-5 sm:px-2">
+                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl sm:px-2">
                   <span className="pr-2 text-5xl font-date">W</span>
                   hen Hamal moved back home to New York in 2021, their
                   conversations became more frequent, and their bond grew
@@ -84,7 +84,7 @@ const Story = () => {
                 </div>{' '}
               </Reveal>
               <Reveal>
-                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl md:px-5 sm:px-2">
+                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl sm:px-2">
                   <span className="pr-2 text-5xl font-date">T</span>heir first
                   date was at a Korean Fried Chicken shop, where Ayesha,
                   breaking with tradition, paid the bill. Their second date was
@@ -100,7 +100,7 @@ const Story = () => {
             </section>
             <section>
               <Reveal>
-                <div className="inline-flex flex-col justify-center overflow-hidden transition-transform rounded-lg shadow-md bg-blue sm:w-400 ">
+                <div className="inline-flex flex-col justify-center overflow-hidden transition-transform rounded-lg shadow-md bg-blue m:w-400 ">
                   <img
                     a={engagementpic}
                     src={engagementpic}
@@ -110,7 +110,7 @@ const Story = () => {
                 </div>{' '}
               </Reveal>
               <Reveal>
-                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl md:px-5 sm:px-2">
+                <p className="pb-5 mb-5 md:text-3xl sm:text-2xl sm:px-2">
                   <span className="pr-2 text-5xl font-date">T</span>he pinnacle
                   of their journey came on April 15, 2023, in Melbourne, where
                   they got engaged, surrounded by friends who made the day

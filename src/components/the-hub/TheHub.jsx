@@ -5,6 +5,7 @@ import bparty from '../images/compressed/bparty.jpg'
 import lovestory from '../images/compressed/lovestory.jpg'
 import weddingdj from '../images/compressed/weddingdj.jpg'
 import plane from '../images/compressed/plane.jpg'
+import zoom from '../images/compressed/zoom.jpg'
 import ourpic from '../images/compressed/ourpic.jpeg'
 import itinerary from '../images/compressed/itinerary.jpg'
 import Clock from '../clock/Clock'
@@ -47,6 +48,9 @@ const TheHub = () => {
   function launchStory() {
     navigate('/story')
   }
+  function launchZoomInfo() {
+    navigate('/zoominfo')
+  }
   function logout() {
     state.logout()
     navigate('/')
@@ -56,8 +60,8 @@ const TheHub = () => {
       <div className="flex justify-center pb-2 mt-20 pt-15">
         <LogoutBtn />
       </div>
-      <div className="">
-        <h1 className="mb-2 mt-10 pt-10 text-center text-transparent text-7xl font-date  bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
+      <div className="pl-5 pr-5">
+        <h1 className="mb-2 mt-10 pt-10 text-center text-transparent text-7xl font-date bg-gradient-to-r from-[#904e55] to-[#bfb48f] bg-clip-text">
           Our Wedding Hub
         </h1>
       </div>
@@ -194,6 +198,22 @@ const TheHub = () => {
                 </button>
               </div>
             )}
+            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+              <img
+                onClick={launchZoomInfo}
+                src={zoom}
+                alt="zoom meeting"
+                className="object-cover h-full "
+              ></img>
+              <button
+                onClick={launchZoomInfo}
+                type="button"
+                className="p-3 text-center uppercase transition-all duration-500 hover:rounded-t-lg text-weddingblack font-display bg-weddingwhite hover:bg-weddingmaroon hover:text-weddingwhite "
+              >
+                Zoom Information <br></br>
+                {'('}Ceremony Only{')'}
+              </button>
+            </div>
           </div>
         </div>
       </div>
