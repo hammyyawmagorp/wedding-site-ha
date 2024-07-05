@@ -34,6 +34,8 @@ const Gifts = () => {
           <p className="pt-4 pb-1 mb-1 text-xl font-normal text-center">
             Instead of a traditional gift, we would greatly appreciate your
             contributions towards our future together. <br></br>
+            Your presence, whether in person or on Zoom, is a gift to us.
+            However, if you would like to give a gift, here are some details.
             You can send money through CashApp, Venmo, or Zelle. We also accept
             Credit/Debit card payments. For our international friends,
             Credit/Debit card and Western Union are available options as well.
@@ -45,6 +47,7 @@ const Gifts = () => {
             <span className="italic font-extrabold ">do not</span> get us boxed
             gifts. Your understanding is truly appreciated. Thank you for being
             part of our journey! Your love and support mean everything to us.{' '}
+            <br></br>
             <span className="pt-5">With love,</span>
             <p className="pt-5 text-3xl font-date">
               Ayesha <span className="pl-2 pr-2">&</span> Hamal
