@@ -108,7 +108,7 @@ const TheHub = () => {
                 </button>
               </div>
             )}
-            <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
+            {/* <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
               <img
                 onClick={launchBridalPartyInfo}
                 src={bparty}
@@ -121,7 +121,7 @@ const TheHub = () => {
               >
                 Meet the Bridal Party & The Families
               </button>
-            </div>
+            </div> */}
             {isVisible && (
               <div className="flex flex-col w-full m-6 overflow-hidden transition-transform rounded-lg shadow-md bg-weddingblack sm:w-52 hover:scale-110">
                 <img
