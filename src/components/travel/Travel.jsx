@@ -9,16 +9,31 @@ const Travel = () => {
         <WhubBtn />
         <LogoutBtn />
       </div>
-
       <div className="pt-5 mt-5">
         <h1 className="mt-5 mb-4 pb-4 text-4xl uppercase font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
           Travel Info
         </h1>
+        <p>
+          Below is a list of recommended hotels and airports. There is also a
+          custom map with important locations and airports highlighted. We hope
+          these will help you plan your trip out!{' '}
+        </p>
+      </div>{' '}
+      <br />
+      <div>
         <div className="pb-5 pl-5 pr-5 font-semibold font-display text-weddingpurple">
+          <h2 className="text-xl font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
+            Ceremony:
+          </h2>
           <p>
-            Below is a list of recommended hotels and airports. There is also a
-            custom map with important locations and airports highlighted. We
-            hope these will help you plan your trip out!{' '}
+            281 Burhans Avenue,<br></br>Haledon, NJ 07508
+          </p>
+          <br />
+          <h2 className="text-xl font-bold font-display text-center text-transparent   bg-gradient-to-r from-[#bfb48f]  to-[#904e55] bg-clip-text ">
+            Reception:
+          </h2>
+          <p>
+            568 High Mountain Road,<br></br> North Haledon, NJ 07508
           </p>
         </div>
         <div className="p-3 rounded-md">
